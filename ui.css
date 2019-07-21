@@ -1,0 +1,324 @@
+/*my ui lib*/
+/*ui包就是为了不至于默认样式那样难看而已*/
+
+/* #107DBF
+#272F34
+#4D5972
+#7782A2
+#DFE7F0 */
+
+/* reset */
+* {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+a {
+    color: #107DBF;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+button {
+    background: none;
+    padding: .40rem .25rem;
+    border: 1px solid #107DBF;
+    border-radius: 3px;
+    color: #107DBF;
+    margin: 2px;
+    cursor: pointer;
+}
+button {
+    background-color: #107DBF;
+    color: white;
+}
+button:hover {
+    background-color: rgb(45, 142, 202);
+}
+code {
+    padding: .25rem;
+    background-color: #DFE7F0;
+    color: #272F34;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-size: small;
+    margin: 0 3px;
+}
+
+h1,h2,h3,h4,h5 {
+    margin:.45rem 0;
+}
+hr {
+    background-color: #7782A2;
+}
+img {
+    border-radius: 3px;
+}
+input,select,option,textarea {
+    padding: .45rem .25rem;
+    font-size: inherit;
+}
+input:hover,select:hover,option:hover,textarea:hover {
+    box-shadow: 1px 1px 1px #7782A2;
+}
+input[type=radio],input[type=checkbox] {
+    margin:.65rem;
+}
+option {
+    text-align: center;
+}
+ul,ol {
+    margin: .45rem 0;
+    list-style: none;
+    padding-inline-start: 0;
+    display: block;
+}
+ul>li,ol>li,ul>tree,ol>tree {
+    padding: .45rem 0;
+    border-bottom: 1px solid #7782A2;
+}
+ul>li:hover,ol>li:hover,ul>tree:hover,ol>tree:hover {
+    background-color:#dfe7f0;
+}
+p {
+    margin:.45rem 0;
+}
+
+/*layout*/
+header,main,footer{
+    padding: 0;
+}
+section {
+    margin: 0 auto; 
+    box-sizing: content-box;
+    max-width: 800px;
+}
+scroll-load {
+    display: block;
+}
+
+/*widget*/
+badge {
+    display: inline-block;
+    border-radius: 1rem;
+    padding:1px .2rem;
+    margin: .2rem;
+    background-color: #107DBF;
+    font-weight: 100;
+    font-size: small;
+    color: white;
+}
+badge:hover {
+    background-color: rgb(46, 168, 243);
+}
+switcher {
+    display: inline;
+    cursor: pointer;
+}
+nav {
+    height: 2.9rem;
+    border-radius: 3px;
+}
+nav>li {
+    display: inline-block;
+    padding: .7rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav>li:hover {
+    border-bottom:.2rem solid #107DBF;
+    background-color: #107DBF;
+    color: white;
+}
+folder {
+    padding: .15rem;
+    border-radius: 3px;
+    display: inline-block;
+    overflow: hidden;
+}
+card {
+    display: inline-block;
+    padding: .45rem;
+    border: 1px solid   #DFE7F0;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px #dfe7f0;
+}
+card>img {
+    float: left;
+    margin:0 .45rem .45rem 0;
+}
+modal {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(223, 231, 240, 0.26);
+    display: none;
+}
+order-h {
+    display: inline-block
+}
+order-h>* {
+    display: none;
+}
+order-h:hover >* {
+    display: inherit;
+}
+quote {
+    display: inline-block;
+    border-radius: 3px;
+    border-left: .5rem solid #7782A2;
+    padding: .45rem
+}
+process {
+    background: #107DBF;
+    min-height: .1rem;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    margin: 1px 0;
+    animation: process_animl 5s;
+    animation-iteration-count:infinite;
+}
+@keyframes process_animl{
+    25% {
+        background:rgb(10, 151, 161)
+    }
+    50% {
+        background: rgb(74, 165, 142)
+    }
+    75%{
+        background: rgb(6, 180, 59)
+    }
+    100% {
+        background-color: #107DBF
+    }
+}
+pager li {
+    display: inline-block;
+    border: 1px solid #107DBF;
+    padding: .45rem;
+    list-style: none;
+}
+pager li:hover {
+    padding-bottom:.25rem; 
+    border-bottom: .25rem solid #107DBF;
+}
+carousel {
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    height: 350px;
+}
+carousel img {
+    position: absolute;
+    display: inline-block;
+    width: inherit;
+}
+carousel {
+    display: block;
+}
+pager {
+    display: inline-block;
+}
+pp {
+    display: block;
+    font-size: small;
+    padding: .45rem;
+}
+p[type=a] {
+    background-color: #107DBF;
+    border-radius: 3px;
+    color: white;
+}
+p[type=b] {
+    background-color: #272F34;
+    border-radius: 3px;
+    color: white;
+}
+p[type=c] {
+    background-color: #7782A2;
+    border-radius: 3px;
+    color: white;
+}
+p[type=d] {
+    background-color: #DFE7F0;
+    border-radius: 3px;
+}
+p[type=e] {
+    background-color: rgb(244, 246, 246);
+    border-radius: 3px;
+}
+part {
+    display: block;
+    position: relative;
+    border:1px solid  #107DBF;
+    padding: .15rem;
+}
+right {
+    display: block;
+    float: right;
+    text-align: right;
+}
+table {
+    margin-top:15px;
+    border-collapse:collapse;
+    border:1px solid #aaa;
+    width:100%;
+  }
+table th {
+    vertical-align:baseline;
+    padding:5px 15px 5px 6px;
+    background-color:#3F3F3F;
+    border:1px solid #3F3F3F;
+    text-align:left;
+    color:#fff;
+  }
+table td {
+vertical-align:text-top;
+padding:6px 15px 6px 6px;
+border:1px solid #aaa;
+}
+table tr:nth-child(odd) {
+background-color:#F5F5F5;
+}
+table tr:nth-child(even) {
+background-color:#fff;
+}
+tip {
+    display:'';
+}
+tree {
+    display: block;
+    list-style: none;
+    cursor: pointer;
+}
+tree>i,tree>span,tree>a {
+    display: inline !important;
+}
+tree>li,tree>tree {
+    padding-left: 1rem;
+    margin: .5rem;
+}
+switcher {
+    display: inline-block;
+    background-color: rgb(160, 179, 179);
+    border-radius: 18px;
+    
+}
+xp {
+    display: block;
+    font-size: x-large;
+    padding: .45rem;
+}
+z {
+    display: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+

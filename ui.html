@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="ui.css">
+    <script src="ui.js"></script>
+</head>
+<body>
+<main style="box-shadow: 1px 1px 5px silver;padding: 0rem 0 5rem 2rem;overflow: hidden;" class="main-margin">
+<section style="margin:0">
+<div id="reset" style="padding-top: 5rem"> 
+    <h1 style="font-weight: 100;margin-bottom: 1rem;">元素重置</h1>
+    
+    <p>你好 world </p>
+    <p><a href="">Link 链接</a></p>
+    <p><button>按钮button</button></p>            
+    <p><code>print('hello world !')</code></p>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <p>
+        <hr>
+        <img src="http://www.desktx.com/d/file/phone/meinv/20161109/smallf5a73ccae8d9cc7a7553ac0e4d96580e.jpg" alt="">
+    </p>
+    <p>
+        <input type="text" placeholder="input widget"><br>
+    </p>
+    <p>
+        <input type="radio" name="r">type readio <input type="radio" name="r">rrrr <br>
+    </p>
+    <p>
+        <input type="date"><br>
+    </p>
+    <p>
+        <input type="checkbox">checkbox1<br>
+        <input type="checkbox">checkbox2<br>
+    </p>
+    <p>
+        <select name="sell" id="sell">
+            <option value="1">123456</option>
+            <option value="2">一二三四五</option>
+        </select>
+    </p>
+    <p>
+        duanluo .dluoan。段落一.duanluo .dluoan。段落一duanluo .dluoan。段落一duanluo .dluoan。段落一duanluo .dluoan。段落一duanluo .dluoan。段落一duanluo .dluoan。段落一
+        duanluo .dluoan。段落一duanluo .dluoan。段落一duanluo .dluoan。段落一duanluo .dluoan。段落一duanluo .dluoan。段落一
+        duanluo .dluoan。段落一duanluo .dluoan。段落一duanluo .dluoan。段落一duanluo .dluoan。段落一
+    </p>
+    <p>
+        duanluo dd  ddluolouo 段落二 dd duanluo dd  ddluolouo 段落二 ddduanluo dd  ddluolouo 段落二 ddduanluo dd  ddluolouo 段落二 ddduanluo dd  ddluolouo 段落二 dd
+        duanluo dd  ddluolouo 段落二 ddduanluo dd  ddluolouo 段落二 ddduanluo dd  ddluolouo 段落二 dd
+    </p>
+    <ul>
+        列表
+        <li>li1</li>
+        <li>li2</li>
+        <li>条目三</li>
+    </ul>
+    <table>
+        表格
+        <tr>
+            <th>key1</th>
+            <th>ke2</th>
+        </tr>
+        <tr>
+            <td>d1</td>
+            <td>d2</td>
+        </tr>
+        <tr>
+            <td>d11</td>
+            <td>td222222222</td>
+        </tr>
+    </table>
+    <div>
+        textarea <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+</div>
+
+
+<div id="layout" style="padding-top: 5rem">
+    <h1 style="font-weight: 100;margin-bottom: 1rem;">布局</h1>
+    <p>
+        section与div ,aside header main  footer 
+    </p>
+
+    <br><br><div>
+    <p>
+        modal
+    </p>
+        <button onclick="MODAL(100)">click modal</button>
+        <modal data-ang="id:100">
+            <div style="width: 320px;height: 280px;background-color: white;border: 1px solid #107dbf">
+                hello modal !
+            </div>
+        </modal>
+    <div>
+
+    <br><br>
+    <p>
+        right
+    </p>
+    <p type="c">
+        defalut left align
+        <right>float and align right</right>
+    </p>
+
+    <br><br>
+    <p>Z</p>
+    <p type='e'>this is wrapper
+        <z data-ang="index:1" style="color: black;text-align:center;"> this is z </z>
+        <z style="text-align: right;">this is z2</z>
+    </p>
+</div>
+
+
+<div id="widget" style="padding-top: 5rem">
+    <!-- widget -->
+    <h1 style="font-weight: 100;margin-bottom: 1rem;">部件</h1>
+
+    <p>
+        <badge>badge</badge> <badge>badge 2</badge> <badge>badge 3</badge> <badge>badge 4</badge>
+    </p>
+    <p>
+        徽章,使用<code>&lt;badge data-ang=""&gt;</code> <br>
+        参数count:Number
+    
+    </p>
+    <br><br>
+    <p>
+        <switcher data-ang="name:t"></switcher>
+    </p>
+    <p>
+        开关，使用<code>&lt;switcher data-ang="name:String"&gt;</code>
+    </p>
+
+    <br><br>
+    <div>
+            <p>
+                    导航条，使用<code>&lt;nav&gt;</code>
+                </p>
+        <nav>
+            <li>nav1</li>
+            <li>导航而</li>
+            <li>nav3</li>
+        </nav>
+        
+    </div>
+
+    <br><br>
+    <div>
+        <p>折叠，使用<code>&lt;folder&gt;</code>，第一个子元素会被当作标题。</p>
+        <div>
+            
+            <folder data-ang="init:visbile">
+                <h3 style="border-bottom:1px solid blue">folder title</h3>
+                <p>folder content...</p>
+            </folder>
+        </div>
+            <div>
+
+                <folder>
+                    <p style="padding: .5rem;background:#107dbf;color:white;display: inline-block;border-radius: 6px;"><i>@</i>
+                        <p>
+                            <p>
+                                icon icon icon .
+                            </p>
+                        </folder>
+            </div>
+    </div>
+
+    <br><br>
+    <div>
+        <p>树,使用<code>&lt;tree&gt;</code></p>
+        <tree><i>+</i>0
+            <li>-1</li>
+            <li>-2</li>
+            <tree><i>+</i>3
+                <li>-3.1</li>
+                <tree>+3.2
+                    <li>-3.2.1</li>
+                    <li>-3.2.2</li>
+                </tree>
+            </tree>
+            <li>-4</li>
+        </tree>
+    </div>
+
+    <br><br>
+    <div>
+        <p>
+           卡片，使用<code>&lt;card&gt;</code>
+        </p>
+        <card>   
+        <img src="http://www.gx8899.com/uploads/allimg/2017110610/x1g5spy0l4r-lp.jpg" alt="" style="width: 25%;">
+        <p>
+            this is a card ,this is the content.
+            this is the content.<br>
+            this is the content.
+            this is the content.
+        </p>
+        </card>
+        <br>
+        <card style="width:25%">   
+        <p>
+            <img src="http://www.gx8899.com/uploads/allimg/2017110610/x1g5spy0l4r-lp.jpg" alt="" style="width: 100%;">
+        </p>
+        <p>
+            this is a card ,this is the content.
+            this is the content.<br>
+            this is the content.
+            this is the content.
+        </p>
+        </card>
+
+    </div>
+
+
+    <br><br>
+    <div>
+        <p>引用，使用<code>&lt;quote&gE;</code></p> 
+        <quote>this is a quote ,the content is quote</quote>
+    </div>
+
+    <br><br>
+    <div>
+        <p>块<code>&lt;part data-ang='title:String'&gt;</code> ，参数为标题</p>
+        <part data-ang="title:part A">
+            <p>title</p>
+            <p>this is one kind of part .</p>
+        </part>
+    </div>
+
+    <br><br>
+    <div>
+        <p>颜色块<code>&lt;p type=String&GT;</code></p>
+        <p type="a">a</p>
+        <p type="b">b</p>
+        <p type="c">c</p>
+        <p type="d">d</p>
+        <p type="e">e</p>
+    </div>
+
+    <br><br>
+    <div>
+        <p>小段落<code>&lt;pp&gt;</code></p>
+        <pp>this is a pp paraph.小段落</pp>
+        <xp>this is a p+ paragh.大段落</xp>
+    </div>
+
+    <br><br>
+    <div>
+        选项卡
+    </div>
+    <div>
+        显示器
+    </div>
+
+    <br><br>
+    <div>
+        <p>进度条</p>
+        <process style="width: 89%">89%</process>
+    </div>
+
+    <br><br>
+    <p>
+        翻页，<code>&lt;pager data-ang="baseUrl:String"&gt;</code>
+    </p>
+    <div>
+        <pager data-ang="baseUrl:./;current:50">
+            <li></li>
+            <li></li>
+            <li></li>
+        </pager>
+    </div>
+    
+    <br><br>
+    <p>carousel</p>
+    <carousel data-ang="button:true;width:525px;height:465px">
+        <img src="https://cn.bing.com/th?id=OIP.B-_XZS_Ez9RPnY4uubTQdgHaEo&pid=Api&rs=1" alt="">
+        <img src="http://www.pc354.com/xupl0ad/news/201506/2015060315040360197.jpg" alt="">
+        <img src="https://www.pakutaso.com/shared/img/thumb/KLPL_FOREST_010.jpg" alt="">
+    </carousel>
+    
+    <br><br>
+    <p>
+        懒加载图片
+    </p>
+    <div>
+        <img alt="lazy load" data-ang="url:http://img1.3lian.com/2015/w19/52/d/3.jpg" style="width: 25%;">
+    </div>
+
+    <br><br>
+    <p>触底加载</p>
+    <div style="height:100px;overflow:overlay;width: 100px;border: 1px solid aliceblue">
+        <loader data-ang="callBack:hello">
+            111<br><br><br><br><br><br>bottom
+        </loader>    
+    </div>
+
+    <br><br>
+    <p>
+        tip <br>
+        <tip data-ang="msg:tip,tip,tip . "><button>abc</button></tip>
+    </p>
+
+    <p>
+        文件上传
+    </p>
+    <p>
+        联级选择
+    </p>
+    <p>
+        验证表单
+    </p>
+    <p>
+        hash动画与top
+    </p>
+
+    <br><br>
+    <div>
+        <p>菜单</p>
+        <nav style="border: 1px solid #107dbf">
+            <li>一</li>
+            <li>
+                <order-h style="position: relative;">二
+                <ul style="background-color:#107dbf;border:3px solid aliceblue;padding: 1.25rem;color: white;">
+                    <li>order1...</li>
+                    <li>order2..</li>
+                    <li>order3.</li>
+                </ul>  
+                </order-h>
+            </li>
+            <li>三+
+                <order>
+                    <ul style="background-color:#107dbf;border:3px solid aliceblue;padding: 1.25rem;color: white;">
+                        <li>order1...</li>
+                        <li>order2..</li>
+                        <li>order3.</li>
+                    </ul>
+                </order>
+            </li>
+        </nav>
+        
+    </div>
+        
+
+
+
+
+        <br>
+        <br>
+        <br>
+    
+
+    <div id="toolkits">
+        <h1 style="font-weight: 100;margin-bottom: 1rem;">toolkits</h1>
+    </div>
+
+
+</section>
+</main>
+
+<aside style="position:fixed;top:0;left:0;height: 100%;
+font-size:x-large;" class="aside">
+<folder data-ang="init:visible">
+    <h1>UI</h1>
+    <ul style="display: inline-block" class="aside-ul-a">
+        
+        <li><a href="#reset">reset</a></li>
+        <li><a href="#layout">layout</a></li>
+        <tree class="tree-li-small">
+            <a href="#widget">
+            widget
+            </a>
+            <li>badge</li>
+            <li>switcher</li>
+            <li>nav</li>
+            <li>folder</li>
+            <li>tree</li>
+            <li>card</li>
+            <li>quote</li>
+            <li>part</li>
+            <li>p type</li>
+            <li>pp</li>
+            <li>p+</li>
+            <li>process</li>
+            <li>pager</li>
+            <li>carousel</li>
+            <li>larzy load img</li>
+            <li>scroll</li>
+            <li>tip</li>
+            <li>order</li>
+            <li>order-h</li>
+            <li></li>
+        </tree>
+        <li><a href="#toolkits">toolkits</a></li>
+    </ul>
+</folder>
+</aside>
+
+<style>
+.main-margin {
+    margin-left:250px;
+}
+.aside {
+    box-sizing: border-box;
+    width: 250px;
+    padding:50px;
+    overflow-y: auto;
+}
+@media only screen and (max-width:800px){
+    .main-margin {
+        margin-left: 0;
+    }
+    .aside {
+        padding: 0;
+        overflow-y: auto;
+    }
+
+}
+.aside-ul-a a:hover {
+    text-decoration: none;
+}
+.aside-ul-a li:hover,.aside-ul-a tree:hover {
+    background-color: aliceblue;
+}
+.tree-li-small li {
+    font-size: large;
+}
+</style>
+
+<script>
+function hello(ctrl,c){
+    ctrl = false;
+    c +=100;
+    alert(c)
+}
+</script>       
+</body>
+</html>
