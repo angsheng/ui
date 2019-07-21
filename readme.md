@@ -2,6 +2,8 @@
 
 ***
 
+演示：<http://shangchao.site/ui/ui.html>
+
 1. 重置了部分元素标签的样式
 2. “小部件”(widget)，以自定义标签和data-属性的方式使用，尽可能地狱html元素标签的使用方式一直
 3. 你可以灵活的更改标签的样式
@@ -10,6 +12,8 @@
 ***
 
 Introduce in English:
+
+demo：<http://shangchao.site/ui/ui.html>
 
 1. reset part element tags default style of html.
 2. the widgets with tag and 'data-' attribute, same like orginnal html element tags for use.
